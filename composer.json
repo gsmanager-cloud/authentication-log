@@ -21,14 +21,14 @@
     ],
     "require": {
         "php": "^8.4",
-        "gsmanager-cloud/auth": "dev-main",
-        "gsmanager-cloud/bus": "dev-main",
-        "gsmanager-cloud/console": "dev-main",
-        "gsmanager-cloud/contracts": "dev-main",
-        "gsmanager-cloud/database": "dev-main",
-        "gsmanager-cloud/http": "dev-main",
-        "gsmanager-cloud/notifications": "dev-main",
-        "gsmanager-cloud/support": "dev-main"
+        "gsmanager-cloud/auth": "v1",
+        "gsmanager-cloud/bus": "v1",
+        "gsmanager-cloud/console": "v1",
+        "gsmanager-cloud/contracts": "v1",
+        "gsmanager-cloud/database": "v1",
+        "gsmanager-cloud/http": "v1",
+        "gsmanager-cloud/notifications": "v1",
+        "gsmanager-cloud/support": "v1"
     },
     "autoload": {
         "psr-4": {
