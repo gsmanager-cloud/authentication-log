@@ -1,0 +1,64 @@
+{
+    "name": "gsmanager-cloud/authentication-log",
+    "description": "GSManager Authentication Log provides authentication logger and notification for GSManager.",
+    "keywords": [
+        "gsmanager",
+        "authentication",
+        "log",
+        "notification"
+    ],
+    "license": "MIT",
+    "homepage": "https://gsmanager.ru",
+    "support": {
+        "issues": "https://github.com/gsmanager/framework/issues",
+        "source": "https://github.com/gsmanager/framework"
+    },
+    "authors": [
+        {
+            "name": "Sergey Tyuhtin",
+            "email": "info@gsmanager.ru"
+        }
+    ],
+    "require": {
+        "php": "^8.4",
+        "gsmanager-cloud/auth": "dev-main",
+        "gsmanager-cloud/bus": "dev-main",
+        "gsmanager-cloud/console": "dev-main",
+        "gsmanager-cloud/contracts": "dev-main",
+        "gsmanager-cloud/database": "dev-main",
+        "gsmanager-cloud/http": "dev-main",
+        "gsmanager-cloud/notifications": "dev-main",
+        "gsmanager-cloud/support": "dev-main"
+    },
+    "autoload": {
+        "psr-4": {
+            "GSManager\\AuthenticationLog\\": "src/"
+        },
+        "files": [
+            "src/helpers.php"
+        ]
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "GSManager\\AuthenticationLog\\Tests\\": "tests/"
+        }
+    },
+    "extra": {
+        "branch-alias": {
+            "dev-master": "1.x-dev"
+        },
+        "gsmanager": {
+            "providers": [
+                "GSManager\\AuthenticationLog\\AuthenticationLogServiceProvider"
+            ]
+        }
+    },
+    "suggest": {
+        "../vendor/guzzlehttp/guzzle": "Required to use the Slack transport (~6.0)"
+    },
+    "config": {
+        "sort-packages": true
+    },
+    "minimum-stability": "dev",
+    "prefer-stable": true
+}
